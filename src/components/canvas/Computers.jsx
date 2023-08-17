@@ -3,41 +3,38 @@
 /* eslint-disable no-unused-vars */
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useFBX, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 
 // eslint-disable-next-line react/prop-types
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./astronaut/scene.gltf");
+  // const computer = useGLTF("./space_girl/scene.gltf");
+  const fbx = useFBX("./Rabbit.fbx")
 
   return (
     <mesh>
+      
+    
+      <hemisphereLight intensity={0}  groundColor='black' />
+      <ambientLight intensity={0.6} />
 
-      <hemisphereLight intensity={10} groundColor='black' />
-      {/* <ambientLight intensity={20}/> */}
-      <pointLight intensity={1} />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
       <primitive
-        object={computer.scene}
-        // scale={isMobile ? 0.7 : 1}
-        scale={isMobile ? 0.7 : 0.75}
+        object={fbx}
+        // scale={isMobile ? 0.7 : 5}
+        scale={isMobile ? 0.00009 : 0.002}
 
-        // position={isMobile ? [0, -3, -2.2] : [0, -3, -1.5]}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        position={isMobile ? [0, -3, -2.2] : [-5, -5, -1.5]}
+        // position={isMobile ? [0, -3, -2.2] : [0, -1.25, -3]}
         rotation={[-0.01, -0.2, -0.1]}
       />
+
     </mesh>
   );
 };
+
+
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -68,10 +65,10 @@ const ComputersCanvas = () => {
       <Canvas
         frameloop='demand'
         shadows
-        // dpr={[1, 2]}
-        camera={{ position: [20, 3, 5], fov: 25 }}
+        camera={{ position: [20, 3, 5], fov: 50 }}
         gl={{ preserveDrawingBuffer: true }}
       >
+        
 
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls
@@ -85,6 +82,7 @@ const ComputersCanvas = () => {
 
         <Preload all />
       </Canvas>
+ 
     </>
   );
 };
