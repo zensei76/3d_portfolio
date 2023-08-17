@@ -112,11 +112,26 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Minimal Portfolio Website",
+    company_name: "",
+    icon: bb,
+    iconBg: "#383E56",
+    date: "June 2023",
+    points: [
+      "Minimal Portfolio Website with React is an educational project aimed at gaining proficiency in using SCSS (Sass). ",
+      "Learning Focus: The primary goal of this project is to gain hands-on experience in using SCSS (Sass) for styling web applications, while simultaneously developing a functional portfolio website",
+      "Implement a responsive layout to ensure the portfolio website looks appealing and functions seamlessly across a variety of devices and screen sizes.",
+      `Technologies Used:
+    React: Utilize React to build the portfolio website, focusing on implementing components and managing state.
+    SCSS (Sass): Learn and practice SCSS techniques for styling, including variables, nesting, mixins, and more, throughout the entire project.`,
+    ],
+  },
+  {
     title: "Movie Library",
     company_name: " ",
     icon: movie,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2023",
     points: [
       "Objective: Developed an interactive movie website to showcase CRUD operations and advanced frontend technologies",
       "React Router for navigation. Context for state management. CRUD operations with Mock API. Material UI for modern design.",
@@ -129,7 +144,7 @@ const experiences = [
     company_name: "",
     icon: codex,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2023",
     points: [
       "Purpose: interact with OpenAI’s Codex API in real-time",
       "Functionality: input natural language queries and receive code suggestions and completions",
@@ -138,27 +153,13 @@ const experiences = [
       "Developed with: JavaScript, HTML, CSS and vite tool",
     ],
   },
+
   {
-    title: "Minimal Portfolio Website",
-    company_name: "",
-    icon: bb,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Minimal Portfolio Website with React is an educational project aimed at gaining proficiency in using SCSS (Sass). ",
-      "Learning Focus: The primary goal of this project is to gain hands-on experience in using SCSS (Sass) for styling web applications, while simultaneously developing a functional portfolio website",
-      "Implement a responsive layout to ensure the portfolio website looks appealing and functions seamlessly across a variety of devices and screen sizes.",
-      `Technologies Used:
-      React: Utilize React to build the portfolio website, focusing on implementing components and managing state.
-      SCSS (Sass): Learn and practice SCSS techniques for styling, including variables, nesting, mixins, and more, throughout the entire project.`,
-    ],
-  },
-  {
-    title: "MakeUp Catalog",
+    title: "Cosmetics Catalog",
     company_name: "",
     icon: makeup,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "November 2023",
     points: [
       "Create a user-friendly web-based application that allows users to easily search for and explore cosmetic products. Implement asynchronous operations using Async/Await and the Fetch API to enhance performance and responsiveness. The app also integrates third-party APIs and libraries to enrich the user experience.",
       "User-Friendly Interface: Created an intuitive user interface that facilitates easy navigation and discovery of cosmetic products. Users can explore product categories, apply filters, and search for specific items.",
