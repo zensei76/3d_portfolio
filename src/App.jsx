@@ -14,7 +14,7 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className=' reative z-0 bg-gradient-to-r from-primary to-primary2'>
+      <div className=' reative z-0 bg-gradient-to-r from-primary to-primary2 scrollbar-none '>
 
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
