@@ -1,0 +1,11 @@
+Model Information:
+* title:	Space Rabbit
+* source:	https://sketchfab.com/3d-models/space-rabbit-a111674b36da448ea876c688fece93b9
+* author:	antonmoek (https://sketchfab.com/antonmoek)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Space Rabbit" (https://sketchfab.com/3d-models/space-rabbit-a111674b36da448ea876c688fece93b9) by antonmoek (https://sketchfab.com/antonmoek) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
