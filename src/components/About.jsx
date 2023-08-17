@@ -19,7 +19,6 @@ const ServiceCard = ({ index, title, icon }) => {
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
-
         <div
           options={{
             max: 45,
@@ -56,23 +55,53 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          <p>
-            I am a web artisan, weaving digital constellations with
-            the cosmic array of React, JavaScript, jQuery, HTML, CSS,
-            Node.js, and MongoDB. My odyssey is propelled by an unyielding quest
-            for excellence, guided by the ethos of deciphering the 'why' beneath
-            each line of code. This cosmic curiosity not only fuels my prowess
-            in unraveling challenges but also stokes my fervor for embracing new
-            technologies and realms.
+          <p className='pb-5 pl-0'>
+            <p>
+              I am a web artisan, weaving digital constellations with the cosmic
+              array of{" "}
+              <span className='bg-gradient-to-b from-blue-500 via-green-500  bg-clip-text text-transparent'>
+                React
+              </span>
+              ,{" "}
+              <span className='bg-gradient-to-b from-blue-500 via-green-500  bg-clip-text text-transparent'>
+                JavaScript
+              </span>
+              ,{" "}
+              <span className='bg-gradient-to-b from-blue-500 via-green-500  bg-clip-text text-transparent'>
+                jQuery
+              </span>
+              ,{" "}
+              <span className='bg-gradient-to-b from-blue-500 via-green-500  bg-clip-text text-transparent'>
+                HTML
+              </span>
+              ,{" "}
+              <span className='bg-gradient-to-b from-blue-500 via-green-500  bg-clip-text text-transparent'>
+                CSS
+              </span>
+              ,{" "}
+              <span className='bg-gradient-to-b from-blue-500 via-green-500  bg-clip-text text-transparent'>
+                Node.js
+              </span>
+              , and{" "}
+              <span className='bg-gradient-to-b from-blue-500 via-green-500  bg-clip-text text-transparent'>
+                MongoDB
+              </span>
+              . My odyssey is propelled by an unyielding quest for excellence,
+              guided by the ethos of deciphering the 'why' beneath each line of
+              code. This cosmic curiosity not only fuels my prowess in
+              unraveling challenges but also stokes my fervor for embracing new
+              technologies and realms.
+            </p>
           </p>
-          <p align='LEFT'>
-          My portfolio stands as a tribute to unwavering dedication.skillfully blending creativity and functionality. 
-          While past achievements shimmer like stardust, my gaze remains fixed on the future."
+          <p className='pb-5 pl-8'>
+            My portfolio stands as a tribute to unwavering dedication.skillfully
+            blending creativity and functionality. While past achievements
+            shimmer like stardust, my gaze remains fixed on the future.
           </p>
-          <p>
-          Join me in the cosmic realm, where we'll
-            craft digital wonders and explore limitless innovation. Embark on
-            this stellar journey with me"
+          <p className='pl-16'>
+            Join me in the cosmic realm, where we'll craft digital wonders and
+            explore limitless innovation. Embark on this stellar journey with
+            me"
           </p>
         </motion.p>
 
