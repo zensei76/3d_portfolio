@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { SpaceRabbitCanvas } from "./canvas";
 
 
 const Hero = () => {
@@ -27,7 +27,7 @@ const Hero = () => {
           <p className=" text-[12px] text-white opacity-50 ">Full Stack   |  Frontend</p>
         </div>
       </div>
-      <ComputersCanvas />
+      <SpaceRabbitCanvas />
       <div className='absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2  '>
