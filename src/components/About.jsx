@@ -51,11 +51,11 @@ const About = () => {
           <h2 className={styles.sectionHeadText}>Overview.</h2>
         </motion.div>
 
-        <motion.p
+        <motion.div
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          <p className='pb-5 pl-0'>
+          <div className='pb-5 pl-0'>
             <p>
               I am a web artisan, weaving digital constellations with the cosmic
               array of{" "}
@@ -92,7 +92,7 @@ const About = () => {
               unraveling challenges but also stokes my fervor for embracing new
               technologies and realms.
             </p>
-          </p>
+          </div>
           <p className='pb-5 pl-8'>
             My portfolio stands as a tribute to unwavering dedication.skillfully
             blending creativity and functionality. While past achievements
@@ -103,7 +103,7 @@ const About = () => {
             explore limitless innovation. Embark on this stellar journey with
             me"
           </p>
-        </motion.p>
+        </motion.div>
 
         <div className='mt-20 flex flex-wrap gap-10'>
           {services.map((service, index) => (

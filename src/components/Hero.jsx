@@ -1,12 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import { motion } from "framer-motion";
+
 import { styles } from "../styles";
 import { SpaceRabbitCanvas, Dino } from "./canvas";
-import { Canvas, useLoader } from "@react-three/fiber";
-import { Suspense } from "react";
-import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
-import { TextureLoader } from "three";
+
 
 
 const Hero = () => {
@@ -38,9 +35,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <SpaceRabbitCanvas />
+      {/* <SpaceRabbitCanvas /> */}
 
-      {/* <Dino /> */}
+      <Dino />
       
       
       {/* <div className='absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center'>
