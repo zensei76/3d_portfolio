@@ -219,72 +219,72 @@ const projects = [
     source_code_link: "https://github.com/zensei76/my_movie",
     website_link: "https://moooovie.netlify.app/",
   },
-  // {
-  //   name: "Codex Application",
-  //   description:
-  //     "The OpenAI Codex Application is a dynamic and innovative project that focuses on harnessing the capabilities of OpenAI's Codex API to facilitate real-time interactions between natural language queries and code suggestions/completions. Developed using a range of modern web technologies, this application aims to provide a seamless and efficient coding experience for users.",
-  //   tags: [
-  //     {
-  //       name: "Javascript",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: " Vite tool",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: codexSnap,
-  //   source_code_link: "hhttps://github.com/zensei76/codex_chat",
-  //   website_link: "https://codex-chat-hazel.vercel.app/",
-  // },
-  // {
-  //   name: "Minimal Porfolio",
-  //   description:
-  //     "The Minimal Portfolio Website developed using React and SCSS is a showcase projects, provide detailed descriptions, highlight skills, and offer an 'About Me' section for a clean design with optimized performance.",
-  //   tags: [
-  //     {
-  //       name: "React",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "SCSS",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "HTML",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: minPortfolioSnap,
-  //   source_code_link: "https://github.com/zensei76/react-portfolio",
-  //   website_link: "https://bhargavburgul.netlify.app/",
-  // },
-  // {
-  //   name: "MakeUp Catalog",
-  //   description:
-  //     "The Makeup Catalog Web App is a hands-on project undertaken to learn API integration while building a user-friendly platform for browsing and exploring cosmetic products. By combining HTML, CSS, Bootstrap, and JavaScript, a responsive and visually appealing app was developed, offering a range of features for users interested in cosmetic products.",
-  //   tags: [
-  //     {
-  //       name: "Javascript",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "bootstrap",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "HTML",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: makeupSnap,
-  //   source_code_link: "https://github.com/zensei76/makeUp-api",
-  //   website_link: "hhttps://peaceful-semifreddo-9a5edf.netlify.app/",
-  // },
+  {
+    name: "Codex Application",
+    description:
+      "The OpenAI Codex Application is a dynamic and innovative project that focuses on harnessing the capabilities of OpenAI's Codex API to facilitate real-time interactions between natural language queries and code suggestions/completions. Developed using a range of modern web technologies, this application aims to provide a seamless and efficient coding experience for users.",
+    tags: [
+      {
+        name: "Javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: " Vite tool",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: codexSnap,
+    source_code_link: "hhttps://github.com/zensei76/codex_chat",
+    website_link: "https://codex-chat-hazel.vercel.app/",
+  },
+  {
+    name: "Minimal Porfolio",
+    description:
+      "The Minimal Portfolio Website developed using React and SCSS is a showcase projects, provide detailed descriptions, highlight skills, and offer an 'About Me' section for a clean design with optimized performance.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SCSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: minPortfolioSnap,
+    source_code_link: "https://github.com/zensei76/react-portfolio",
+    website_link: "https://bhargavburgul.netlify.app/",
+  },
+  {
+    name: "MakeUp Catalog",
+    description:
+      "The Makeup Catalog Web App is a hands-on project undertaken to learn API integration while building a user-friendly platform for browsing and exploring cosmetic products. By combining HTML, CSS, Bootstrap, and JavaScript, a responsive and visually appealing app was developed, offering a range of features for users interested in cosmetic products.",
+    tags: [
+      {
+        name: "Javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: makeupSnap,
+    source_code_link: "https://github.com/zensei76/makeUp-api",
+    website_link: "hhttps://peaceful-semifreddo-9a5edf.netlify.app/",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
