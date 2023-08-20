@@ -1,0 +1,15 @@
+
+  
+  .animate-img {
+    animation: animate 2s infinite ease alternate;
+  }
+  /* styles.css */
+
+
+  
+  @keyframes animate {
+    to {
+      transform: translateY(20px);
+    }
+  }
+  
