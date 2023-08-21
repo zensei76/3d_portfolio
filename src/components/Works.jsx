@@ -11,9 +11,8 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { useEffect, useState } from "react";
 
 const ProjectCard = ({
@@ -27,7 +26,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className='bg-tertiary p-5 rounded-2xl w-[360px] '>
+      <div className='bg-tertiary p-5 rounded-2xl w-[317px] '>
         <div className='relative w-full '>
           <img
             src={image}
@@ -51,7 +50,7 @@ const ProjectCard = ({
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px] h-[200px]'>
+          <p className='mt-2 text-secondary text-[13px] h-[200px]'>
             {description}
           </p>
         </div>
@@ -81,61 +80,19 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1124 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1124, min: 768 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
   };
 
   return (
@@ -165,15 +122,27 @@ const Works = () => {
         ))}
       </div> */}
 
-      <div className='mt-20  w-full '>
-        <Slider {...settings} className='slick-slider h-100 gap-4'>
+      <div className='mt-20 w-full  '>
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          draggable={true}
+          showDots={true}
+          centerMode={false}
+          containerClass='carousel-container'
+          itemClass='carousel-item-padding-40-px'
+          
+          
+        >
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}
-        </Slider>
+        </Carousel>
       </div>
     </>
   );
 };
+
+
 
 export default SectionWrapper(Works, "");
