@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 
 import { styles } from "../styles";
-import { SpaceRabbitCanvas, Dino } from "./canvas";
+import {  Dino } from "./canvas";
 
 
 
